@@ -172,4 +172,8 @@ if __name__ == "__main__":
     parser.add_argument("--network", default="yolov8s", choices=['yolov6n', 'yolov8s', 'yolox_s_leaky'], help="Which Network to use, defult is yolov6n")
     args = parser.parse_args()
     app = GStreamerDetectionApp(args, user_data)
+
+    begin = time.time()
     app.run()
+    end = time.time()
+    print( "Total time: ", 733/ (end - begin))

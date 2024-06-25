@@ -16,9 +16,6 @@ wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolo
 wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolov6n.hef -P ./yolomodel
 wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolov8s_h8l.hef -P ./yolomodel
 
-# download video file to ./resources
-wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/video/detection0.mp4 -P ./yolomodel
-
 source ./setup_env.sh
 
 pip install setproctitle
