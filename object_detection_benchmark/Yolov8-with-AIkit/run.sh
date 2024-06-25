@@ -1,20 +1,27 @@
 #!/bin/bash
 
+# Define the folder path and URL of the file to download
+folder="/yolomodel"
+
+# Check if the folder exists
+if [ ! -d "$folder" ]; then
+    # If the folder does not exist, create it
+    mkdir -p "$folder"
+    
+    # Download the file into the created folder
+    wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolov5n_seg_h8l_mz.hef -P ./yolomodel
+    wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolov8s_pose_h8l_pi.hef -P ./yolomodel
+    wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolox_s_leaky_h8l_mz.hef -P ./yolomodel
+    wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolov6n.hef -P ./yolomodel
+    wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolov8s_h8l.hef -P ./yolomodel
+    
+    echo "Folder created and file downloaded successfully."
+else
+    # If the folder already exists, do nothing
+    echo "Folder already exists. No action taken."
+fi
+
 mkdir ./yolomodel
-
-# download hef files to ./resources
-
-# H8 HEFs
-# wget https://hailo-model-zoo.s3.eu-west-2.amazonaws.com/ModelZoo/Compiled/v2.10.0/hailo8/yolov5n_seg.hef -P ./resources
-# wget https://hailo-tappas.s3.eu-west-2.amazonaws.com/v3.26/general/hefs/yolov5m_wo_spp_60p.hef -P ./resources
-# wget https://hailo-tappas.s3.eu-west-2.amazonaws.com/v3.26/general/hefs/centerpose_regnetx_1.6gf_fpn.hef -P ./resources
-
-# H8L HEFs
-wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolov5n_seg_h8l_mz.hef -P ./yolomodel
-wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolov8s_pose_h8l_pi.hef -P ./yolomodel
-wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolox_s_leaky_h8l_mz.hef -P ./yolomodel
-wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolov6n.hef -P ./yolomodel
-wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolov8s_h8l.hef -P ./yolomodel
 
 source ./setup_env.sh
 
