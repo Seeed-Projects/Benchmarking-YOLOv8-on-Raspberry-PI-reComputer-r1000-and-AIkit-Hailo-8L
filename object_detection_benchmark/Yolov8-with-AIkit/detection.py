@@ -101,11 +101,11 @@ class GStreamerDetectionApp(GStreamerApp):
 
         # Set the HEF file path based on the network
         if args.network == "yolov6n":
-            self.hef_path = os.path.join(self.current_path, './yolo_model/yolov6n.hef')
+            self.hef_path = os.path.join(self.current_path, './yolomodel/yolov6n.hef')
         elif args.network == "yolov8s":
-            self.hef_path = os.path.join(self.current_path, './yolo_model/yolov8s_h8l.hef')
+            self.hef_path = os.path.join(self.current_path, './yolomodel/yolov8s_h8l.hef')
         elif args.network == "yolox_s_leaky":
-            self.hef_path = os.path.join(self.current_path, './yolo_model/yolox_s_leaky_h8l_mz.hef')
+            self.hef_path = os.path.join(self.current_path, './yolomodel/yolox_s_leaky_h8l_mz.hef')
         else:
             assert False, "Invalid network type"
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir ./yolomodel
+
 # download hef files to ./resources
 
 # H8 HEFs
@@ -17,6 +19,9 @@ wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/hefs/h8l_rpi/yolo
 # download video file to ./resources
 wget https://hailo-csdata.s3.eu-west-2.amazonaws.com/resources/video/detection0.mp4 -P ./yolomodel
 
-./set_env.sh
+source ./setup_env.sh
+
+pip install setproctitle
+pip install opencv-python
 
 python3 detection.py --input ../../video/detection0.mp4

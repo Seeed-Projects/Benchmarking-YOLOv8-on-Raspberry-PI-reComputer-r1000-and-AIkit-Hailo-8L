@@ -9,4 +9,4 @@ end = time.time()
 
 total_time = end - begin
 
-print("average fps: ", total_time/total_time)
+print("average fps: ", total_frames/total_time)
