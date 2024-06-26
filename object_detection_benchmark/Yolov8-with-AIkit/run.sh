@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the folder path and URL of the file to download
-folder="/yolomodel"
+folder="./yolomodel"
 
 # Check if the folder exists
 if [ ! -d "$folder" ]; then
