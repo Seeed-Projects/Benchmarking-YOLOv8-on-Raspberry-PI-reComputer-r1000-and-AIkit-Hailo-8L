@@ -55,31 +55,32 @@ The true result is as follows:
 
 # Run this project
 
-## Run object detection on the Raspberry Pi CM4 without AI kit
+## Run object detection on the Recomputer1000 without AI kit
 
-1. Install the repository
+### Step 1. Install the repository
 
 ```
 https://github.com/Seeed-Projects/Benchmark-of-Yolo-on-CM4-with-AI-kit.git
 ```
-2. The following command to run the object 
+### Step 2. The following command to run the object 
 ```
 cd Benchmark-of-Yolo-on-CM4-with-AI-kit/object_detection_benchmark/Yolov8-with-AIkit
 bash ./run.sh
 ```
 
-## Run object detection on the Raspberry Pi CM4 with AI kit
+## Run object detection on the Recomputer1000 with AI kit
 
-1. Install the repository
+### Step 1. Install the repository
 
 ```
 https://github.com/Seeed-Projects/Benchmark-of-Yolo-on-CM4-with-AI-kit.git
 ```
-2. The following command to run the object 
+
+### Step 2. The following command to run the object 
+
 ```
 cd Benchmark-of-Yolo-on-CM4-with-AI-kit/object_detection_benchmark/Yolov8-without-AIkit
 bash ./run.sh
 ```
 # Results
-
 Here will be the video of the results to compare the performance of the Raspberry Pi CM4 with and without AI kit.
