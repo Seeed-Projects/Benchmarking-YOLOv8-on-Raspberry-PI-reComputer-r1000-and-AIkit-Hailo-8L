@@ -11,6 +11,7 @@ This repository demonstrates object detection model using YOLOv8 on a Raspberry 
 
 ## step 1. Install the Hailo-8L on the Raspberry Pi CM4
 
+<div align='center'><img width={600} src='resource/install.gif'></div>
 
 ## Step 2. Update system & Set pcie to gen3
 
