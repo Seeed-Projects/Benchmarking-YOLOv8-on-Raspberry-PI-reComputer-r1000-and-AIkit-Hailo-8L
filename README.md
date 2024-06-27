@@ -61,7 +61,7 @@ The true result is as follows:
 ### Step 1. Install the repository
 
 ```
-https://github.com/Seeed-Projects/Benchmark-of-Yolo-on-CM4-with-AI-kit.git
+git clone https://github.com/Seeed-Projects/Running-YOLOv8-Object-Detection-on-reComputer-R1000-CM4-Powered-Edge-Gateway-with-Hailo-8L.git
 ```
 ### Step 2. The following command to run the object 
 ```
@@ -77,7 +77,7 @@ bash ./run.sh
 ### Step 1. Install the repository
 
 ```
-https://github.com/Seeed-Projects/Benchmark-of-Yolo-on-CM4-with-AI-kit.git
+git clone https://github.com/Seeed-Projects/Running-YOLOv8-Object-Detection-on-reComputer-R1000-CM4-Powered-Edge-Gateway-with-Hailo-8L.git
 ```
 
 ### Step 2. The following command to run the object 
