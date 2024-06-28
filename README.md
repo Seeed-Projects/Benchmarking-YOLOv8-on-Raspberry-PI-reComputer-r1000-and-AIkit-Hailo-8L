@@ -1,4 +1,4 @@
-# Running YOLOv8 Object Detection on reComputer R1000(CM4-Powered Edge Gateway) with Hailo-8L 
+# Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L
 This repository demonstrates object detection model using YOLOv8 on a Raspberry Pi CM4 with Hailo Acceleration. The Raspberry Pi AI Kit enhances the performance of the Raspberry Pi and unlock its potential in artificial intelligence and machine learning applications, like smart retail, smart traffic and more. Although the Raspberry AI Kit is designed for Raspberry Pi 5, we have experimented it on our CM4-powered edge gateway. Excited about turning our edge device into an intelligent IoT gateway! 
 # Hardware Preparation
 ## [reComputer R1000](https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html): Raspberry Pi CM4 Gateway, 4GB RAM, 32GB eMMC  
