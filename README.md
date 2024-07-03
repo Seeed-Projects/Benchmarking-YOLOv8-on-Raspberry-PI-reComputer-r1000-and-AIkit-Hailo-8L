@@ -65,8 +65,8 @@ git clone https://github.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-
 ```
 ### Step 2. The following command to run the object 
 ```
-cd Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/object_detection_benchmark/Yolov8-with-AIkit
-bash ./run.sh
+cd Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L
+bash ./run.sh object-detection
 ```
 ### Result
 
@@ -83,8 +83,8 @@ git clone https://github.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-
 ### Step 2. The following command to run the object 
 
 ```
-cd Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/object_detection_benchmark/Yolov8-without-AIkit
-bash ./run.sh
+cd Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L
+bash ./run.sh object-detection-hailo
 ```
 
 ### Result
@@ -99,8 +99,8 @@ git clone https://github.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-
 ```
 ### Step 2. The following command to run the object 
 ```
-cd Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/pose_estimation_benchmark/Yolov8-without-AIkit
-bash ./run.sh
+cd Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L
+bash ./run.sh pose-estimation
 ```
 
 ### Result
@@ -118,8 +118,8 @@ git clone https://github.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-
 ### Step 2. The following command to run the object 
 
 ```
-cd Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/pose_estimation_benchmark/Yolov8-with-AIkit
-bash ./run.sh
+cd Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L
+bash ./run.sh pose-estimation-hailo
 ```
 
 ### Result
