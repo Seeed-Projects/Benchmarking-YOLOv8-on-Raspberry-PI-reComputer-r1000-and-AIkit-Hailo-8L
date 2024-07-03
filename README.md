@@ -90,8 +90,45 @@ bash ./run.sh
 ### Result
 ![image](./resource/with_hailo.gif)
 
+## Run pose estimation on the Recomputer1000 without AI kit
+
+### Step 1. Install the repository
+
+```
+git clone https://github.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L.git
+```
+### Step 2. The following command to run the object 
+```
+cd Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/pose_estimation_benchmark/Yolov8-without-AIkit
+bash ./run.sh
+```
+
+### Result
+
+![image](./resource/YOLOv8-pose-estimation-without-AIkit.gif)
+
+## Run pose estimation on the Recomputer1000 with AI kit
+
+### Step 1. Install the repository
+
+```
+git clone https://github.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L.git
+```
+
+### Step 2. The following command to run the object 
+
+```
+cd Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/pose_estimation_benchmark/Yolov8-with-AIkit
+bash ./run.sh
+```
+
+### Result
+
+![image](./resource/YOLOv8-pose-estimation-with-AIkit.gif)
+
 # Results
 
-| Model | Without Hailo | With Hailo |
+| Object | Without Hailo | With Hailo |
 | --- | --- | --- |
 | YOLOV8 Object Detection| 0.75FPS | 29.5FPS |
+| YOLOv8 Pose Estimation| 0.5FPS| 27FPS|
