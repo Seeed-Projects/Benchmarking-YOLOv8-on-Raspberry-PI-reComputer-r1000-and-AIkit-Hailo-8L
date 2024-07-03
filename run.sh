@@ -21,8 +21,7 @@ if [ "$filename" == "object-detection-hailo" ] || [ "$filename" == "pose-estimat
         echo "Folder already exists. No action taken."
     fi
 
-    source ./setup_env.sh
-
+    source setup_env.sh
     pip install setproctitle
     pip install opencv-python
 
