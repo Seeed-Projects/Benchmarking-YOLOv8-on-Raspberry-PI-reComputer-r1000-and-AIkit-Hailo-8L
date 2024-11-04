@@ -26,7 +26,7 @@ if [ "$filename" == "object-detection-hailo" ] || [ "$filename" == "pose-estimat
     pip install opencv-python
 
 
-    python3 "$1".py --input ./video/detection0.mp4
+    python3 "$1".py --input ./video/detection0.mp4 -f
 fi
 
 
