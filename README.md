@@ -16,13 +16,25 @@ This repository demonstrates object detection model using YOLOv8 on a Raspberry 
 
 ![image](./resource/install.gif)
 
-## Step 2. Update system & Set pcie to gen3
+## Step 2. Switch to use X11 backend
 
 ```
 sudo apt update
 sudo apt full-upgrade
 sudo raspi-config
 ```
+
+Select option "6 Advanced Options":
+<div align='center'><img width={600} src='./resource/1.png'></div>
+Then select option "A6 Wayland":
+<div align='center'><img width={600} src='./resource/x11_1.png'></div>
+Choose "W1 X11" to use X11 backend:
+<div align='center'><img width={600} src='./resource/x11_2.png'></div>
+Click "OK" to exit.
+<div align='center'><img width={600} src='./resource/x11_3.png'></div>
+
+## Step 3. Update system & Set pcie to gen3
+
 Select option "6 Advanced Options":
 <div align='center'><img width={600} src='./resource/1.png'></div>
 Then select option "A8 PCIe Speed":
@@ -32,7 +44,7 @@ Choose "Yes" to enable PCIe Gen 3 mode:
 Click "Finish" to exit.
 <div align='center'><img width={600} src='./resource/4.png'></div>
 
-## Step 3. Install Hailo Software & Verify Installation
+## Step 4. Install Hailo Software & Verify Installation
 
 Install hailo-all and reboot
 ```
